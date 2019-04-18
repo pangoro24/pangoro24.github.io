@@ -46,10 +46,20 @@ $(document).ready(function() {
     }
   }
 
+  
   // ========================================================================= //
   //  //NAVBAR SHOW - HIDE
   // ========================================================================= //
-
+  // About section scroll
+  $(".overlay-detail a").on('click', function(event) {
+    event.preventDefault();
+    var hash = this.hash;
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function() {
+      window.location.hash = hash;
+    });
+  });
 
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
