@@ -89,7 +89,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Pablo Gonzalez Robles.", "Engineer.", "Developer.", "Freelancer."],
+      strings: ["Pablo Gonzalez Robles.", "Engineer.", "Developer."],
       typeSpeed: 100,
       loop: true,
     });
